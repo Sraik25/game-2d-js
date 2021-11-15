@@ -1,4 +1,5 @@
 import Dimention from './dimentions.js';
+import Keyword from './keywords.js';
 import MainLoop from './mainLoop.js';
 import Rectangle from './rectangle.js';
 
@@ -15,9 +16,10 @@ class Main {
 
   run = () => {
     console.log(`Juego iniciado`);
+    Keyword.start();
     this.dimentions.start();
     this.mainLoop.try();
-    this.refreshTiles()
+    this.refreshTiles();
   };
 
   refreshTiles = () => {

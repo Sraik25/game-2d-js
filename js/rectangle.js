@@ -18,7 +18,6 @@ export default class Rectangle {
     const html = document.getElementById('juego').innerHTML;
     const color = `#${floor(random() * 16777215).toString(16)}`;
 
-    console.log({ div, html, color, id: this.id });
     document.getElementById('juego').innerHTML = html + div;
 
     //ADD: styles

@@ -1,9 +1,10 @@
+import Keyword from './keywords.js';
+
 /**
  * @class MainLopp es el loop principal para el juego
  * @property aps - actualizaciones por segundo
  * @property fps - frames por segundo
  */
-
 export default class MainLoop {
   constructor() {
     this.executionId = null;
@@ -29,6 +30,7 @@ export default class MainLoop {
   stop = () => {};
 
   update = (temporaryRecord) => {
+    Keyword.resetKeywords();
     this.aps++;
   };
 
