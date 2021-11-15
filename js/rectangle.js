@@ -6,7 +6,7 @@ export default class Rectangle {
     this.y = y;
     this.width = width;
     this.heigth = heigth;
-    this.id = `r${x}${y}`;
+    this.id = `${x}r${y}`;
 
     this.insertInDOM();
   }

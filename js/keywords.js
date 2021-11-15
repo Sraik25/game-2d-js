@@ -5,7 +5,7 @@ export default class Keyword {
     document.onkeydown = this.saveKey;
   };
 
-  static saveKey = (e) => {
+  static saveKey = (e = KeyboardEvent) => {
     this.keywords.push(e.key);
     console.log(this.keywords);
   };
